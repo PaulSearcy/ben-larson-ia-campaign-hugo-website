@@ -1,4 +1,10 @@
 baseURL = 'https://benjaminlarson.org'
 languageCode = 'en-us'
-title = 'Benjamin Larson for City Council'
-theme = 'hugo-theme-cleanwhite-master'
+title = 'Benjamin Larson for Iowa House'
+disableKinds = ['taxonomy', 'term', 'RSS']
+
+[params]
+  description = 'Benjamin Larson for Iowa House District 19 — Housing for All. A nurse and working-class voice for Iowa families.'
+  email = 'Benjamin.T.Larson@proton.me'
+  facebook = 'https://www.facebook.com/pottawattamiecountydems/'
+  district = 'Iowa House District 19'
