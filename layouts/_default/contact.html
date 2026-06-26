@@ -1,0 +1,26 @@
+{{ define "description" }}Contact Benjamin Larson for Iowa House District 19.{{ end }}
+{{ define "main" }}
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p class="lead">I'd love to hear from you</p>
+    </div>
+  </section>
+
+  <section class="content-block">
+    <div class="container">
+      <div class="contact-highlight">
+        <h2>How to Contact Me</h2>
+        <p><strong>SEND ME EMAILS!</strong></p>
+        <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+      </div>
+
+      <img class="content-img" src="{{ "images/ben-campaign-2.jpg" | relURL }}" alt="Benjamin Larson" width="800" height="450" />
+
+      <!-- <p>Facebook page coming soon! More updates to come through Local Crow and the <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener noreferrer">Pottawattamie County Democrats</a> Facebook page.</p> -->
+
+    </div>
+  </section>
+</main>
+{{ end }}

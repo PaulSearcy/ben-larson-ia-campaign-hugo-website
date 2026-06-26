@@ -1,0 +1,38 @@
+{{ define "description" }}Meet Benjamin Larson — nurse, paramedic, and candidate for Iowa House District 19.{{ end }}
+{{ define "main" }}
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Meet Benjamin Larson</h1>
+      <p class="lead">A working-class candidate bringing working-class voices to the table</p>
+    </div>
+  </section>
+
+  <section class="content-block">
+    <div class="container about-split">
+      <img src="{{ "images/ben-portrait.jpg" | relURL }}" alt="Benjamin Larson" width="400" height="500" />
+      <div>
+        <h2>Why I'm Running</h2>
+        <p>I am a 33 year old nurse, who originally started in medicine as a paramedic at the age of 20. I began working in small town America until 2016, at which point I transferred to Select Specialty's ICU and eventually worked to becoming an RN. I currently specialize in cardiology as the nurse for two different cardiologists.</p>
+        <p>I hope not only to represent Iowa, but I also hope to inspire others and strike back against what I feel is a generational hopelessness and ennui with the youngest generations.</p>
+        <p>I'm a progressive who's worked through rural America and through the pandemic. I've seen firsthand the myriad of ways America's systems have failed everyday Americans—from privatized emergency services abandoning towns, to burying families during COVID, to fighting insurance companies daily so patients can get basic healthcare.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block section-alt">
+    <div class="container">
+      {{ .Content }}
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <div class="container">
+      <blockquote class="quote-block">
+        <p>Everyone deserves leaders who understand their struggles. I am a working-class candidate aiming to bring working-class voices to the table.</p>
+        <cite>— Benjamin Larson</cite>
+      </blockquote>
+    </div>
+  </section>
+</main>
+{{ end }}

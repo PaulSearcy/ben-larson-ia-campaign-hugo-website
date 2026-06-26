@@ -1,125 +1,63 @@
-{{ define "header" }}
-<!-- Post Header -->
-<style type="text/css">
-    header.intro-header {
-        background-color: darkblue;
-    }
-</style>
-<!-- background-image: url('./images/BenLarson.webp') -->
-{{ if eq .Params.headerstyle "text" }}
-<header class="intro-header style-text" >
-{{ else }}
-<header class="intro-header" >
-{{ end }}
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        {{ range .Params.tags }}
-                        <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" title="{{ . }}">
-                            {{ . }}
-                        </a>
-                        {{ end }}
-                    </div>
-                    <h1>{{ .Title }}</h1>
-                    <h2 class="subheading">{{ .Params.subtitle }}</h2>
-                    <span class="meta">
-                        {{ .Params.spantext }} 
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-{{ end }}
-
+{{ define "description" }}Benjamin Larson for Iowa House District 19 — Housing for All. A nurse and working-class voice for Iowa families.{{ end }}
+{{ define "title" }}Benjamin Larson for Iowa House | Housing for All{{ end }}
 {{ define "main" }}
-<!-- Post Content -->
-<article>
+<main>
+  <section class="hero">
     <div class="container">
-        <div class="row">
-
-            <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-                <!--
-                {{ if not (eq (.Param "showtoc") false) }}
-                <header>
-                    <h2>TOC</h2>
-                </header>
-                {{.TableOfContents}}
-                {{ end }}
-                -->
-                {{ .Content }}
-
-                {{ if .Site.Params.reward }}
-                {{ partial "reward.html" . }}
-                {{ end }}
-
-                {{ if or (.PrevInSection) (.NextInSection) }}
-                <hr>
-                <ul class="pager">
-                    {{ if .PrevInSection }}
-                    <li class="previous">
-                        <a href="{{ .PrevInSection.RelPermalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title}}">&larr;
-                            Previous Post</a>
-                    </li>
-                    {{ end }}
-                    {{ if .NextInSection }}
-                    <li class="next">
-                        <a href="{{ .NextInSection.RelPermalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title}}">Next
-                            Post &rarr;</a>
-                    </li>
-                    {{ end }}
-                </ul>
-                {{ end }}
-
-                {{ partial "comments.html" . }}
-            </div>
-
-            <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                {{ if .Site.Params.featured_tags }}
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        {{ $featured_condition_size := .Site.Params.featured_condition_size }}
-                        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                        {{ if gt (len $taxonomy.Pages) $featured_condition_size }}
-                        <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">
-                            {{ $name }}
-                        </a>
-                        {{ end }}
-                        {{ end }}
-                    </div>
-                </section>
-                {{ end }}
-
-                <!-- Friends Blog -->
-                {{ if .Site.Params.friends }}
-                <section>
-                    <hr>
-                    <h5>FRIENDS</h5>
-                    <ul class="list-inline">
-                        {{ range .Site.Params.friend_link }}
-                        <li><a target="_blank" href="{{.href}}">{{.title}}</a></li>
-                        {{ end }}
-                    </ul>
-                </section>
-                {{ end }}
-            </div>
-        </div>
+      <h1>Benjamin Larson for Iowa House</h1>
+      <p class="hero-sub">A space for everybody. A place for everybody. Fighting for working families across {{ .Site.Params.district }}.</p>
+      <div class="hero-actions">
+        <a class="btn btn-outline" href="{{ "/about/" | relURL }}">Meet Ben</a>
+        <a class="btn btn-outline" href="{{ "/contact/" | relURL }}">Contact</a>
+      </div>
     </div>
-</article>
+  </section>
 
+  <section class="quote-section">
+    <div class="container">
+      <blockquote class="quote-block">
+        <p>I hope not only to represent Iowa, but also to inspire others and strike back against what I feel is a generational hopelessness and ennui with the youngest generations.</p>
+        <cite>— Benjamin Larson</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="section" id="issues">
+    <div class="container">
+      <div class="section-header">
+        <h2>On the Issues</h2>
+        <p>It's time we stand up for our ideals and take on the status quo.</p>
+      </div>
+      <div class="issues-grid">
+        <article class="issue-card">
+          <h3>Housing First</h3>
+          <p>Tackle the growing homeless crisis through housing first—giving people small lockable safe spaces and enrolling them into public assistance programs.</p>
+        </article>
+        <article class="issue-card">
+          <h3>Community Engagement</h3>
+          <p>Inspire greater community engagement through leading by example, transparency with open-forum debates, and better access to local resources.</p>
+        </article>
+        <article class="issue-card">
+          <h3>Affordable Housing</h3>
+          <p>Keep housing costs and property taxes from increasing further using tools like community benefit agreements.</p>
+        </article>
+        <article class="issue-card">
+          <h3>Smart Development</h3>
+          <p>Increased local investment and development using dense, mixed-use urbanism.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container about-split">
+      <img src="{{ "images/ben-portrait.jpg" | relURL }}" alt="Benjamin Larson" width="400" height="500" />
+      <div>
+        <h2>Who is Benjamin Larson?</h2>
+        <p>I am a 33 year old nurse, who originally started in medicine as a paramedic at the age of 20. I began working in small town America until 2016, at which point I transferred to Select Specialty's ICU and eventually worked to becoming an RN. I currently specialize in cardiology as the nurse for two different cardiologists.</p>
+        <p><a class="btn btn-primary" href="{{ "/about/" | relURL }}">Meet Ben</a></p>
+      </div>
+    </div>
+  </section>
+</main>
 {{ end }}

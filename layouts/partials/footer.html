@@ -1,0 +1,21 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>Benjamin Larson for Iowa House</strong>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="{{ "/about/" | relURL }}">Meet Ben</a>
+          <a href="{{ "/contact/" | relURL }}">Contact</a>
+        </nav>
+      </div>
+      <div class="social-links" aria-label="Social links">
+        <a href="mailto:{{ .Site.Params.email }}" title="Email">@</a>
+        <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; Benjamin Larson for Iowa House 2026</p>
+      <p class="paid-for">Paid for by Benjamin Larson for Iowa House</p>
+    </div>
+  </div>
+</footer>
