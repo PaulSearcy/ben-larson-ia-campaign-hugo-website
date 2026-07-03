@@ -1,0 +1,50 @@
+{{ define "description" }}The platform of Benjamin Larson for Iowa House District 19 — fighting for healthcare, housing, education, and working families.{{ end }}
+{{ define "main" }}
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.lead }}</p>
+    </div>
+  </section>
+
+  {{ with .TableOfContents }}
+  <nav class="platform-toc" aria-label="Platform sections">
+    <div class="container">
+      {{ . }}
+    </div>
+  </nav>
+  {{ end }}
+
+  <article class="platform-content">
+    <div class="container platform-accordions">
+      {{ range findRESubmatch `<h2 id="?([^">\s]+)"?>([^<]+)</h2>\s*(<ul>[\s\S]*?</ul>)` .Content }}
+      <details class="platform-accordion" id="{{ index . 1 }}">
+        <summary class="platform-accordion__summary">
+          <span class="platform-accordion__title">{{ index . 2 | safeHTML }}</span>
+          <span class="platform-accordion__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </span>
+        </summary>
+        <div class="platform-accordion__panel">
+          {{ index . 3 | safeHTML }}
+        </div>
+      </details>
+      {{ end }}
+    </div>
+  </article>
+
+  <section class="platform-cta">
+    <div class="container">
+      <blockquote class="quote-block">
+        <p>Everyone deserves leaders who understand their struggles. I am a working-class candidate aiming to bring working-class voices to the table.</p>
+        <cite>— Benjamin Larson</cite>
+      </blockquote>
+      <div class="platform-cta-actions">
+        <a class="btn btn-primary" href="{{ "/contact/" | relURL }}">Get in Touch</a>
+        <a class="btn btn-outline" href="{{ "/about/" | relURL }}">Meet Ben</a>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}
