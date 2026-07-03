@@ -3,6 +3,13 @@ languageCode = 'en-us'
 title = 'Benjamin Larson for Iowa House'
 disableKinds = ['taxonomy', 'term', 'RSS']
 
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 2
+
 [params]
   description = 'Benjamin Larson for Iowa House District 19 — Housing for All. A nurse and working-class voice for Iowa families.'
   email = 'Benjamin.T.Larson@proton.me'
