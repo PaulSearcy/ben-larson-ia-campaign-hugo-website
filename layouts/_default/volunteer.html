@@ -1,0 +1,70 @@
+{{ define "description" }}Volunteer for Benjamin Larson for Iowa House District 19 — sign up to help and find out where to pick up a yard sign.{{ end }}
+{{ define "main" }}
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.lead }}</p>
+    </div>
+  </section>
+
+  <!-- <section class="content-block">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ways to Get Involved</h2>
+        <p>Every hour, every conversation, and every yard sign makes a difference.</p>
+      </div>
+
+      <div class="involve-grid">
+        <div class="involve-card">
+          <h3>Request a Yard Sign</h3>
+          <p>Show your support for Ben across the district. Grab a sign at one of the pickup locations below.</p>
+          <a class="btn btn-primary" href="#yard-signs">Find a Location</a>
+        </div>
+        <div class="involve-card">
+          <h3>Knock Doors</h3>
+          <p>Talk with neighbors about the issues that matter most. No experience needed — we'll train you.</p>
+          <a class="btn btn-primary" href="mailto:{{ .Site.Params.email }}?subject=I%20want%20to%20knock%20doors">Sign Up</a>
+        </div>
+        <div class="involve-card">
+          <h3>Make Calls</h3>
+          <p>Help us reach voters from anywhere. Phone banking is a flexible way to pitch in.</p>
+          <a class="btn btn-primary" href="mailto:{{ .Site.Params.email }}?subject=I%20want%20to%20phone%20bank">Sign Up</a>
+        </div>
+        <div class="involve-card">
+          <h3>Host or Attend an Event</h3>
+          <p>Gather friends and neighbors, or join us at an upcoming event in the community.</p>
+          <a class="btn btn-primary" href="mailto:{{ .Site.Params.email }}?subject=I%20want%20to%20help%20with%20events">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="content-block section-alt" id="yard-signs">
+    <div class="container">
+      <div class="section-header">
+        <h2>Where to Get a Yard Sign</h2>
+        <p>Stop by any of the locations below to pick up your free yard sign.</p>
+      </div>
+
+      {{ with .Params.yard_sign_locations }}
+      <div class="involve-grid">
+        {{ range . }}
+        <div class="involve-card">
+          <h3>{{ .name }}</h3>
+          <address>{{ .address }}</address>
+          {{ with .hours }}<p><strong>Hours:</strong> {{ . }}</p>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <div class="contact-highlight" style="margin-top: 2rem;">
+        <p><strong>Can't make it to a pickup location?</strong></p>
+        <p>Email us and we'll arrange to get a sign to you.</p>
+        <p><a href="mailto:{{ .Site.Params.email }}?subject=Yard%20Sign%20Request">{{ .Site.Params.email }}</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}
