@@ -9,11 +9,11 @@ lead: "Real policies for real Iowans — not corporate donors, not special inter
 - **Restore the State Auditor's power** — return independent investigative authority so corruption can be held accountable again.
 - **End big-money corruption** — overturn Citizens United and get dark money out of Iowa politics.
 - **Ban eminent domain abuse** — stop the use of eminent domain for the CO2 pipeline.
-- **Restore reproductive rights** — end the abortion ban and permanently protect a woman's right to choose.
 - **Legalize marijuana** — full legalization and total forgiveness of all cannabis-related criminal records.
 
 ## Healthcare
 
+- **Restore reproductive rights** — end the abortion ban and permanently protect a woman's right to choose.
 - **One portal for prior authorizations** — force all insurance agencies to use the same, single website for all prior authorizations.
 - **Cut the paperwork** — require health insurers to reduce bureaucratic burden to a maximum of 10–15 minutes per patient.
 - **End referral re-ups** — make it illegal for insurance companies to require specialist referrals to be renewed every 6 months. One referral should be enough.
@@ -24,10 +24,9 @@ lead: "Real policies for real Iowans — not corporate donors, not special inter
 
 ## Cost of Living
 
-- **Regulate data center construction** — ban new data centers that don't meet strict guidelines on minimum distance from homes, water and power impact, and environmental protection.
-- **Ban AI surge pricing** — total ban on AI-driven "surge pricing" already in use by the airline industry.
-- **Pass Right to Repair** — force corporations in Iowa to make repair manuals easily available for purchase and download.
-- **Restore collective bargaining** — full restoration of collective bargaining rights with accountability for those who stripped them away.
+- **Regulate data center construction** — change zoning and add regulations to ensure that data centers pull their weight and do not increase water and electricity bills for normal residents.
+- **Ban AI surge pricing** — total ban on AI-driven "surge pricing". Brick and mortor stores, like supermarkets, should not be allowed to change pricing based on the invidual or during peak hours.
+- **Pass Right to Repair** — force corporations that conduct business in Iowa to make repair manuals easily available for purchase and download. Allow farmers to be able to repair their own equipment without having to take it to the dealer's specialized shop. 
 
 ## Property Tax
 
@@ -53,8 +52,9 @@ lead: "Real policies for real Iowans — not corporate donors, not special inter
 
 - **$18/hour minimum wage** — raise the minimum wage to $18/hour and fix its rise to inflation going forward.
 - **Ban sub-minimum wage** — total ban on paying any worker below the minimum wage.
+- **Restore collective bargaining** —suppport for unions, restore collective bargaining rights. Accountability for those who seek to strip them away.
 - **Statewide antitrust enforcement** — pursue antitrust enforcement at the state level.
-- **Crack down on wage theft** — pursue wage theft aggressively and make examples of offending companies.
+- **Crack down on wage theft** — pursue wage theft, such as unpaid overtime, aggressively and make examples of offending companies.
 
 ## Privacy & Surveillance
 
