@@ -37,6 +37,56 @@
     });
   });
 
+  const zoomImages = document.querySelectorAll("[data-zoomable]");
+  if (zoomImages.length) {
+    let lightbox = null;
+
+    function closeLightbox() {
+      if (!lightbox) return;
+      lightbox.classList.remove("open");
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", onKeydown);
+    }
+
+    function onKeydown(e) {
+      if (e.key === "Escape") closeLightbox();
+    }
+
+    function openLightbox(src, alt) {
+      if (!lightbox) {
+        lightbox = document.createElement("div");
+        lightbox.className = "lightbox";
+        lightbox.innerHTML =
+          '<button class="lightbox__close" type="button" aria-label="Close">&times;</button>' +
+          '<img class="lightbox__img" alt="" />';
+        lightbox.addEventListener("click", (e) => {
+          if (e.target === lightbox || e.target.closest(".lightbox__close")) {
+            closeLightbox();
+          }
+        });
+        document.body.appendChild(lightbox);
+      }
+      const img = lightbox.querySelector(".lightbox__img");
+      img.src = src;
+      img.alt = alt || "";
+      lightbox.classList.add("open");
+      document.body.style.overflow = "hidden";
+      document.addEventListener("keydown", onKeydown);
+    }
+
+    zoomImages.forEach((img) => {
+      img.setAttribute("role", "button");
+      img.setAttribute("tabindex", "0");
+      img.addEventListener("click", () => openLightbox(img.src, img.alt));
+      img.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openLightbox(img.src, img.alt);
+        }
+      });
+    });
+  }
+
   const toc = document.querySelector(".platform-toc");
   if (toc) {
     const sections = document.querySelectorAll(".platform-accordion[id]");
