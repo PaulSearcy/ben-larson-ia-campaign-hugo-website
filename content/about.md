@@ -5,7 +5,7 @@ layout: about
 
 ## Roots in Rural America
 
-Benjamin Larson grew up on an acreage along the Platte River in rural Nebraska. His mother's family were ranchers; his father's side served as teachers, law enforcement officers, and public employees. That upbringing instilled a deep respect for the land, local communities, and the working families who sustain them—values that would shape his path into public service and healthcare.
+Benjamin Larson grew up on an acreage along the Platte River in rural Nebraska. His mother's family was ranchers; his father's side served as teachers, law enforcement officers, and public employees. That upbringing instilled a deep respect for the land, local communities, and the working families who sustain them values that would shape his path into public service and healthcare.
 
 ## A Career Built on Service
 
@@ -15,14 +15,14 @@ At 16, Ben lost his father to an aggressive form of cancer. The compassionate ca
 
 That experience carried Ben to Select Specialty ICU during the COVID-19 pandemic, while he worked toward his nursing degree. His team specialized in ventilator care and advanced respiratory therapies, maintaining rigorous safety protocols under extraordinary pressure. By the end of 2020, they had cared for families who lost multiple members to the virus.
 
-In 2021, Ben moved to Council Bluffs—returning to the area where his parents grew up—and enrolled in the RN program at Iowa Western Community College. He worked full-time while completing his degree, graduating in 2023 with an Associate's in Nursing. Today, he serves as a cardiac care nurse within the Nebraska Medical System, bringing that frontline perspective to patient care every day.
+In 2021, Ben moved to Council Bluffs returning to the area where his parents grew up and enrolled in the RN program at Iowa Western Community College. He worked full-time while completing his degree, graduating in 2023 with an Associate's in Nursing. Today, he serves as a cardiac care nurse within the Nebraska Medical System, bringing that frontline perspective to patient care every day.
 
 ## Why Ben Is Running
 
-More than a decade in emergency medicine, ICU care, and specialty nursing has given Ben a clear view of what works in healthcare—and what is broken. He has watched hospitals close, ambulance services collapse, and insurance companies deny care to patients who desperately need it.
+More than a decade in emergency medicine, ICU care, and specialty nursing has given Ben a clear view of what works in healthcare and what is broken. He has watched hospitals close, ambulance services collapse, and insurance companies deny care to patients who desperately need it.
 
-Ben is not running to discuss these problems in the abstract. He is running because he has lived them—and because Iowans deserve a representative who understands the real challenges facing working families, healthcare workers, and rural communities.
+Ben is not running to discuss these problems in the abstract. He is running because he has lived them and because Iowans deserve a representative who understands the real challenges facing working families, healthcare workers, and rural communities.
 
 ## Beyond the Campaign
 
-Outside of nursing and campaigning, Ben pursues astronomy, renewable energy, gardening, and hands-on projects in his garage. He is driven by a belief in building—whether an electric bike, a community garden, or a better future for Iowa.
+Outside of nursing and campaigning, Ben pursues astronomy, renewable energy, gardening, and hands-on projects in his garage. He is driven by a belief in building whether an electric bike, a community garden, or a better future for Iowa.
