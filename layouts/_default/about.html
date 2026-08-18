@@ -8,11 +8,11 @@
     </div>
   </section>
 
-  <section class="content-block">
+  <section class="content-block" aria-labelledby="about-running-heading">
     <div class="container about-split">
       <img src="{{ "images/ben-portrait.jpg" | relURL }}" alt="Benjamin Larson" width="400" height="500" />
       <div>
-        <h2>Why I'm Running</h2>
+        <h2 id="about-running-heading">Why I'm Running</h2>
         <p>Benjamin Larson is a 33-year-old cardiac nurse and paramedic with more than 14 years in healthcare. His career began in small-town America; in 2016, he joined Select Specialty's ICU and went on to become a registered nurse. He now specializes in cardiology, supporting two cardiologists in daily patient care.</p>
         <p>Ben is running to represent Iowa—and to show the next generation that change is possible. He is committed to countering the hopelessness and disengagement that too many young people feel today.</p>
         <p>With experience across rural America and on the front lines of the pandemic, Ben has seen how broken systems fail working families: emergency services privatized out of small towns, communities devastated by COVID, and patients forced to battle insurance companies for basic care.</p>
@@ -21,8 +21,24 @@
   </section>
 
   <section class="content-block section-alt">
-    <div class="container">
-      {{ .Content }}
+    <div class="container about-bio">
+      <div class="about-bio-copy">
+        {{ .Content }}
+      </div>
+      <figure class="about-film-frame">
+        <video
+          controls
+          playsinline
+          preload="none"
+          poster="{{ "images/ben-about-poster.jpg" | relURL }}"
+          width="720"
+          height="1280"
+          aria-describedby="about-film-caption"
+        >
+          <source src="{{ "images/ben-about.mp4" | relURL }}" type="video/mp4" />
+        </video>
+        <figcaption id="about-film-caption">Ben speaking with neighbors at a community meeting.</figcaption>
+      </figure>
     </div>
   </section>
 
