@@ -788,15 +788,17 @@ h4 {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: clamp(1.5rem, 4vw, 2.5rem);
-  justify-items: center;
 }
 
 .endorsement {
   text-align: center;
-  max-width: 20rem;
+  flex: 1 1 11rem;
+  max-width: 16rem;
+  min-width: 0;
 }
 
 .endorsement-media {
@@ -825,6 +827,11 @@ h4 {
   transform: scale(1.2) translate(-1%, -6%);
 }
 
+.endorsement-media--chris img {
+  object-position: 55% 20%;
+  transform: scale(1.12);
+}
+
 .endorsement-media--logo {
   padding: 0.6rem;
 }
@@ -832,6 +839,10 @@ h4 {
 .endorsement-media--logo img {
   object-fit: contain;
   image-rendering: -webkit-optimize-contrast;
+}
+
+.endorsement-media--wordmark {
+  padding: 1.15rem 0.55rem;
 }
 
 .endorsement-name {
@@ -856,16 +867,21 @@ h4 {
   line-height: 1.35;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .endorsements-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem 1.25rem;
+  }
+
+  .endorsement {
+    flex-basis: calc(50% - 0.75rem);
+    max-width: none;
   }
 }
 
 @media (max-width: 420px) {
-  .endorsements-grid {
-    grid-template-columns: 1fr;
+  .endorsement {
+    flex-basis: 100%;
+    max-width: 20rem;
   }
 }
 
