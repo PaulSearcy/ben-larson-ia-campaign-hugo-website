@@ -25,7 +25,7 @@ lead: "Real policies for real Iowans — not corporate donors, not special inter
 ## Cost of Living
 
 - **Regulate data center construction** — change zoning and add regulations to ensure that data centers pull their weight and do not increase water and electricity bills for normal residents.
-- **Ban AI surge pricing** — total ban on AI-driven "surge pricing". Brick and mortor stores, like supermarkets, should not be allowed to change pricing based on the invidual or during peak hours.
+- **Ban AI surge pricing** — total ban on AI-driven "surge pricing". Brick and mortar stores, like supermarkets, should not be allowed to change pricing based on the individual or during peak hours.
 - **Pass Right to Repair** — force corporations that conduct business in Iowa to make repair manuals easily available for purchase and download. Allow farmers to be able to repair their own equipment without having to take it to the dealer's specialized shop. 
 
 ## Property Tax
@@ -52,7 +52,7 @@ lead: "Real policies for real Iowans — not corporate donors, not special inter
 
 - **$18/hour minimum wage** — raise the minimum wage to $18/hour and fix its rise to inflation going forward.
 - **Ban sub-minimum wage** — total ban on paying any worker below the minimum wage.
-- **Restore collective bargaining** —suppport for unions, restore collective bargaining rights. Accountability for those who seek to strip them away.
+- **Restore collective bargaining** — support for unions, restore collective bargaining rights. Accountability for those who seek to strip them away.
 - **Statewide antitrust enforcement** — pursue antitrust enforcement at the state level.
 - **Crack down on wage theft** — pursue wage theft, such as unpaid overtime, aggressively and make examples of offending companies.
 
